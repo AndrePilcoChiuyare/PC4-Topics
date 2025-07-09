@@ -22,8 +22,12 @@ Tanto SPADE como JADE son herramientas potentes para el desarrollo de sistemas m
 - **Simplicidad y rapidez de desarrollo:** SPADE, al estar basado en Python, facilita la integración con otras librerías y la definición de agentes de manera concisa, agilizando el proceso de desarrollo.
 - **Integración con herramientas modernas:** SPADE es más fácil de combinar con bibliotecas de machine learning, APIs REST y bases de datos.
 - **Facilidad de despliegue:** Con el uso de Docker y servidores XMPP como OpenFire, es posible desplegar entornos completos rápidamente.
+- **Rendimiento y escalabilidad:** JADE requiere establecer toda la cadena de comunicación entre agentes antes de comunicar los mensajes; mientras que en SPADE la comunicación es asíncrona, permitiendo a los agentes trabajar independientemente y aceptar tareas tan pronto como estén disponibles. Esto fue comprobado mediante el experimento de Radhakrishnan et al. (2018), quienes evidenciaron mayor retardo en JADE cuando el número de mensajes aumentó; no obstante, usó menos CPU que SPADE.
 
 **Desventajas respecto a JADE**
-- Comunidad: JADE, al tener más años de desarrollo, presenta una comunidad más grande y documentación más extensa.
-- Soporte a estándares FIPA: JADE cumple de forma más completa con los estándares FIPA, mientras que SPADE tiene implementaciones más ligeras.
-- Herramientas de monitoreo: JADE incluye herramientas gráficas integradas para monitorear los agentes, lo cual es útil en entornos complejos. Para lograr un comportamiento similar en SPADE, es necesario implementarlas manualmente o recurrir a herramientas externas.
+- **Comunidad:** JADE, al tener más años de desarrollo, presenta una comunidad más grande y documentación más extensa.
+- **Soporte a estándares FIPA:** JADE cumple de forma más completa con los estándares FIPA, mientras que SPADE tiene implementaciones más ligeras y con un enfoque más práctico (Radhakrishnan et al., 2018).
+- **Herramientas de monitoreo:** JADE incluye herramientas gráficas integradas para monitorear los agentes, lo cual es útil en entornos complejos. Para lograr un comportamiento similar en SPADE, es necesario implementarlas manualmente o recurrir a herramientas externas (Radhakrishnan et al., 2018).
+
+## Referencias biliográficas:
+Radhakrishnan, G., V., C., & K., S. (2018). Comparative study of JADE and SPADE multi agent system. International Journal of Advanced Research, 6(11), 1035–1042. https://doi.org/10.21474/IJAR01/8090
