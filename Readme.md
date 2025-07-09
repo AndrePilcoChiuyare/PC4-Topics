@@ -17,10 +17,11 @@ En cuanto a los componentes del sistema multiagente que utilizan el servidor XMP
 
 ## (3 puntos) Incluya un comentario de la opinión del grupo respecto a las ventajas y desventajas de SPACE vs JADE.
 Tanto SPADE como JADE son herramientas potentes para el desarrollo de sistemas multiagente, pero tienen características que diferencian su utilidad dependiendo del contexto del proyecto:
+
 **Ventajas de SPADE frente a JADE**
-- Simplicidad y rapidez de desarrollo: SPADE, al estar basado en Python, facilita la integración con otras librerías y la definición de agentes de manera concisa, agilizando el proceso de desarrollo.
-- Integración con herramientas modernas: SPADE es más fácil de combinar con bibliotecas de machine learning, APIs REST y bases de datos.
-- Facilidad de despliegue: Con el uso de Docker y servidores XMPP como OpenFire, es posible desplegar entornos completos rápidamente.
+- **Simplicidad y rapidez de desarrollo:** SPADE, al estar basado en Python, facilita la integración con otras librerías y la definición de agentes de manera concisa, agilizando el proceso de desarrollo.
+- **Integración con herramientas modernas:** SPADE es más fácil de combinar con bibliotecas de machine learning, APIs REST y bases de datos.
+- **Facilidad de despliegue:** Con el uso de Docker y servidores XMPP como OpenFire, es posible desplegar entornos completos rápidamente.
 
 **Desventajas respecto a JADE**
 - Comunidad: JADE, al tener más años de desarrollo, presenta una comunidad más grande y documentación más extensa.
