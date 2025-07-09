@@ -8,7 +8,7 @@
 
 Después de instalar Rust (`https://rustup.rs/`), para el correcto funcionamiento SPADE, se utilizó la imagen Docker de OpenFire del usuario sameersbn a través de `docker pull sameersbn/openfire:latest`. Luego, se instaló la librería `spade` mediante la sentencia `pip install spade`. Por último, se ejecutó el servidor a través de `docker run --name openfire -d --restart=always  --publish 9090:9090 --publish 5222:5222 --publish 7777:7777 --volume /srv/docker/openfire:/var/lib/openfire sameersbn/openfire:latest`.
 
-Una vez iniciado el servidor XMPP con Docker, se ingresó a él a través de `http://localhost:9090` y se inicializó el dominio como `localhost`, se establecieron las credenciales de administrador y se seleccionó una base de datos embebida. Por último, se creó manualmente un usuario `torre` y diez para los aviones (`avion_n`).
+Una vez iniciado el servidor XMPP con Docker, se ingresó a él a través de `http://localhost:9090` y se inicializó el dominio como `localhost`, se establecieron las credenciales de administrador y se seleccionó una base de datos embebida. Por último, se creó manualmente un usuario `torre` y diez para los aviones (`avion_n`), los cuales serán instanciados por el Host.
 
 En cuanto a los componentes del sistema multiagente que utilizan el servidor XMPP como para la comunicación, se tienen tres principales:
 - **Avión:** Representa un avión que realiza tareas periódicas y escucha instrucciones como mostrar su nombre cada cierto tiempo, informar que está volando, solicitar permiso para aterrizar, esperar respuestas de la torre y aterrizar.
